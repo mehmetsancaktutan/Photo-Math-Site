@@ -5,56 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Photo Math</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2 { color: #000; }
-        h1 { border-bottom: 2px solid #eaeaea; padding-bottom: 10px; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            margin: 0;
+            padding: 40px 20px;
+            /* Kırmızıdan beyaza şık arka plan geçişi */
+            background: linear-gradient(135deg, #ff4b4b 0%, #ffffff 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 { color: #222; }
+        h1 { 
+            border-bottom: 2px solid #ff4b4b; 
+            padding-bottom: 10px; 
+            color: #ff4b4b;
+        }
         p { margin-bottom: 15px; }
         ul { margin-bottom: 20px; }
-        .contact { font-weight: bold; }
+        .contact { 
+            font-weight: bold; 
+            color: #ff4b4b;
+            font-size: 1.1em;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> 19 April 2026</p>
-    <p><strong>Applies to:</strong> Photo Math (the "Application")</p>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Effective Date:</strong> 19 April 2026</p>
+        <p><strong>Applies to:</strong> Photo Math (the "Application")</p>
 
-    <h2>1. Introduction</h2>
-    <p>This Privacy Policy describes how we collect, use, and protect your personal information when you use the "Photo Math" mobile application. By downloading or using the App, you agree to the practices described in this Policy.</p>
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy describes how we collect, use, and protect your personal information when you use the "Photo Math" mobile application. By downloading or using the App, you agree to the practices described in this Policy.</p>
 
-    <h2>2. Information We Collect</h2>
-    <p>We value your privacy and collect only minimal information necessary to provide core functionality:</p>
-    <ul>
-        <li><strong>Camera and Photos:</strong> The App requires access to your device's camera to capture math problems. 
-        <strong>[LOKAL İŞLEM SEÇENEĞİ]:</strong> These images are processed locally on your device and are never uploaded to our servers.
-        <strong>[SUNUCU / API İŞLEMİ SEÇENEĞİ]:</strong> These images are sent securely to our servers (or third-party AI providers) solely for the purpose of analyzing and solving the math problem.
-        </li>
-        <li><strong>Analytics (Optional):</strong> We may collect anonymous, aggregated data via App Store tools to understand app crashes and performance.</li>
-    </ul>
+        <h2>2. Information We Collect</h2>
+        <p>We value your privacy and collect only minimal information necessary to provide core functionality:</p>
+        <ul>
+            <li><strong>Camera and Photos:</strong> The App requires access to your device's camera to capture math problems. 
+            <strong>[LOKAL İŞLEM SEÇENEĞİ]:</strong> These images are processed locally on your device and are never uploaded to our servers.
+            <strong>[SUNUCU / API İŞLEMİ SEÇENEĞİ]:</strong> These images are sent securely to our servers (or third-party AI providers) solely for the purpose of analyzing and solving the math problem.
+            </li>
+            <li><strong>Analytics (Optional):</strong> We may collect anonymous, aggregated data via App Store tools to understand app crashes and performance.</li>
+        </ul>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>The information collected is used solely to:</p>
-    <ul>
-        <li>Provide the core functionality of solving math problems.</li>
-        <li>Improve the accuracy and performance of the App.</li>
-    </ul>
-    <p>We do not sell, rent, or share your personal data with any third parties.</p>
+        <h2>3. How We Use Your Information</h2>
+        <p>The information collected is used solely to:</p>
+        <ul>
+            <li>Provide the core functionality of solving math problems.</li>
+            <li>Improve the accuracy and performance of the App.</li>
+        </ul>
+        <p>We do not sell, rent, or share your personal data with any third parties.</p>
 
-    <h2>4. Data Security & Retention</h2>
-    <p>We implement standard security measures to protect your data. 
-    <strong>[LOKAL İŞLEM SEÇENEĞİ]:</strong> Since images are processed locally, no camera data is stored by us.
-    <strong>[SUNUCU / API İŞLEMİ SEÇENEĞİ]:</strong> Images sent for analysis are not stored permanently and are deleted immediately after the solution is provided.
-    </p>
+        <h2>4. Data Security & Retention</h2>
+        <p>We implement standard security measures to protect your data. 
+        <strong>[LOKAL İŞLEM SEÇENEĞİ]:</strong> Since images are processed locally, no camera data is stored by us.
+        <strong>[SUNUCU / API İŞLEMİ SEÇENEĞİ]:</strong> Images sent for analysis are not stored permanently and are deleted immediately after the solution is provided.
+        </p>
 
-    <h2>5. Third-Party Services</h2>
-    <p>If you purchase a subscription through the App, payments are handled securely by Apple's billing system. We do not have access to your payment details.</p>
+        <h2>5. Third-Party Services</h2>
+        <p>If you purchase a subscription through the App, payments are handled securely by Apple's billing system. We do not have access to your payment details.</p>
 
-    <h2>6. Changes to This Policy</h2>
-    <p>We may occasionally update this Privacy Policy. You are encouraged to review this page periodically for any changes.</p>
+        <h2>6. Changes to This Policy</h2>
+        <p>We may occasionally update this Privacy Policy. You are encouraged to review this page periodically for any changes.</p>
 
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-    <p class="contact">Email: memoli53sancak@gmail.com</p>
+        <h2>7. Contact Us</h2>
+        <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+        <p class="contact">Email: desteksancaktutan@gmail.com</p>
+    </div>
 
 </body>
 </html>
