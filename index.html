@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Photo Math</title>
+    <title>Photo Math - Legal Information</title>
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
@@ -11,7 +11,6 @@
             color: #333; 
             margin: 0;
             padding: 40px 20px;
-            /* Kırmızıdan beyaza şık arka plan geçişi */
             background: linear-gradient(135deg, #ff4b4b 0%, #ffffff 100%);
             background-attachment: fixed;
             min-height: 100vh;
@@ -21,119 +20,100 @@
             margin: 0 auto;
             background-color: #ffffff;
             padding: 40px;
-            border-radius: 20px;
+            border-radius: 24px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
-        .logo-area {
-            text-align: center;
-            margin-bottom: 25px;
+        .logo-area { text-align: center; margin-bottom: 20px; }
+        .logo-area img { width: 100px; height: 100px; border-radius: 22px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        
+        h1 { text-align: center; color: #ff4b4b; margin-bottom: 30px; }
+        
+        /* Sekme Navigasyonu */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
         }
-        .logo-area img {
-            width: 120px;
-            height: 120px;
-            border-radius: 24px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            object-fit: cover;
+        .nav-tabs a {
+            text-decoration: none;
+            color: #666;
+            padding: 10px 20px;
+            border-radius: 30px;
+            background: #f5f5f5;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s;
         }
-        h1 { 
-            text-align: center;
-            color: #ff4b4b;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 15px;
-            margin-top: 0;
-        }
-        h2 { 
-            color: #222; 
-            margin-top: 30px;
-            font-size: 1.4em;
-        }
-        p { margin-bottom: 15px; }
-        ul { margin-bottom: 20px; }
+        .nav-tabs a:hover { background: #ff4b4b; color: white; }
+
+        h2 { color: #222; margin-top: 40px; border-left: 4px solid #ff4b4b; padding-left: 15px; }
+        .legal-section { margin-top: 50px; padding-top: 20px; border-top: 2px solid #f9f9f9; }
+        
         .contact-box { 
             background-color: #fff5f5;
-            padding: 20px;
-            border-radius: 12px;
-            border-left: 5px solid #ff4b4b;
-            margin-top: 30px;
-        }
-        .contact-email { 
-            font-weight: bold; 
-            color: #ff4b4b;
-            text-decoration: none;
-        }
-        .app-store-badge {
-            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-        .app-store-badge img {
-            height: 45px;
-            transition: transform 0.2s;
-        }
-        .app-store-badge img:hover {
-            transform: scale(1.05);
-        }
-        .footer-text {
             text-align: center;
-            font-size: 0.8em;
-            color: #999;
-            margin-top: 20px;
         }
+        .contact-email { color: #ff4b4b; font-weight: bold; text-decoration: none; }
+        
+        .badge-area { text-align: center; margin-top: 50px; }
+        .badge-area img { height: 40px; }
+        .footer { text-align: center; margin-top: 30px; font-size: 0.8em; color: #999; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <div class="logo-area">
-            <img src="logo.png" alt="Photo Math Logo" onerror="this.src='https://via.placeholder.com/120?text=Photo+Math'">
+            <img src="logo.png" alt="Photo Math Logo" onerror="this.src='https://via.placeholder.com/100?text=PM'">
         </div>
 
-        <h1>Privacy Policy</h1>
-        <p><strong>Effective Date:</strong> 19 April 2026</p>
-        <p><strong>Applies to:</strong> Photo Math (the "Application")</p>
+        <h1>Photo Math Legal</h1>
 
-        <h2>1. Introduction</h2>
-        <p>This Privacy Policy describes how we collect, use, and protect your personal information when you use the "Photo Math" mobile application. By downloading or using the App, you agree to the practices described in this Policy.</p>
+        <div class="nav-tabs">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Use</a>
+            <a href="#support">Support</a>
+        </div>
 
-        <h2>2. Information We Collect</h2>
-        <p>We value your privacy and collect only minimal information necessary to provide core functionality:</p>
-        <ul>
-            <li><strong>Camera and Photos:</strong> The App requires access to your device's camera to capture math problems. These images are processed securely to provide solutions.</li>
-            <li><strong>Analytics:</strong> We may collect anonymous, aggregated data via Apple's standard tools to understand app crashes and improve performance.</li>
-        </ul>
+        <div id="privacy">
+            <h2>Privacy Policy</h2>
+            <p><strong>Effective Date:</strong> 19 April 2026</p>
+            <p>This policy explains how Photo Math collects and uses your information. We value your privacy and keep data collection to a minimum.</p>
+            <ul>
+                <li><strong>Camera Access:</strong> Used only to capture math problems for solving. Photos are processed to provide results and are not stored permanently.</li>
+                <li><strong>Data Protection:</strong> We do not sell or share your personal data with third parties.</li>
+                <li><strong>Analytics:</strong> Anonymous data may be collected to fix bugs and improve app performance.</li>
+            </ul>
+        </div>
 
-        <h2>3. How We Use Your Information</h2>
-        <p>The information collected is used solely to:</p>
-        <ul>
-            <li>Provide the core functionality of solving math problems.</li>
-            <li>Improve the accuracy and performance of the App.</li>
-        </ul>
-        <p>We do not sell, rent, or share your personal data with any third parties.</p>
+        <div id="terms" class="legal-section">
+            <h2>Terms of Use (EULA)</h2>
+            <p>By using Photo Math, you agree to the following terms:</p>
+            <ul>
+                <li><strong>Usage:</strong> This app is an educational tool. Users are responsible for verifying the accuracy of the results provided.</li>
+                <li><strong>Subscriptions:</strong> Payments are handled by Apple. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period.</li>
+                <li><strong>Liability:</strong> We are not liable for any academic or financial consequences resulting from the use of the app.</li>
+                <li><strong>Restore:</strong> Users can restore their purchases at any time using the "Restore" button within the app settings/paywall.</li>
+            </ul>
+        </div>
 
-        <h2>4. Data Security & Retention</h2>
-        <p>We implement standard security measures to protect your data. Images captured for analysis are not stored permanently on our servers and are used only for the duration of the request.</p>
-
-        <h2>5. Third-Party Services</h2>
-        <p>If you purchase a subscription through the App, payments are handled securely by Apple's billing system. We do not have access to your payment details.</p>
-
-        <h2>6. Changes to This Policy</h2>
-        <p>We may occasionally update this Privacy Policy. You are encouraged to review this page periodically for any changes.</p>
-
-        <div class="contact-box">
-            <h2>7. Contact Us</h2>
-            <p>If you have any questions or concerns about this Privacy Policy or need support, please contact us at:</p>
+        <div id="support" class="contact-box">
+            <h2>Support & Contact</h2>
+            <p>Need help or have questions about your privacy?</p>
             <p><strong>Email:</strong> <a href="mailto:desteksancaktutan@gmail.com" class="contact-email">desteksancaktutan@gmail.com</a></p>
         </div>
 
-        <div class="app-store-badge">
-            <p style="margin-bottom: 10px; font-size: 0.9em; color: #666;">Available on the</p>
-            <a href="#">
-                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
-            </a>
+        <div class="badge-area">
+            <a href="#"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="App Store"></a>
         </div>
 
-        <div class="footer-text">
+        <div class="footer">
             © 2026 Photo Math. All rights reserved.
         </div>
     </div>
