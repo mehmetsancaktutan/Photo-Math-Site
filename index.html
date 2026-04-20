@@ -13,6 +13,7 @@
             padding: 40px 20px;
             /* Kırmızıdan beyaza şık arka plan geçişi */
             background: linear-gradient(135deg, #ff4b4b 0%, #ffffff 100%);
+            background-attachment: fixed;
             min-height: 100vh;
         }
         .container {
@@ -20,27 +21,74 @@
             margin: 0 auto;
             background-color: #ffffff;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
         }
-        h1, h2 { color: #222; }
+        .logo-area {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .logo-area img {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
         h1 { 
-            border-bottom: 2px solid #ff4b4b; 
-            padding-bottom: 10px; 
+            text-align: center;
             color: #ff4b4b;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 15px;
+            margin-top: 0;
+        }
+        h2 { 
+            color: #222; 
+            margin-top: 30px;
+            font-size: 1.4em;
         }
         p { margin-bottom: 15px; }
         ul { margin-bottom: 20px; }
-        .contact { 
+        .contact-box { 
+            background-color: #fff5f5;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #ff4b4b;
+            margin-top: 30px;
+        }
+        .contact-email { 
             font-weight: bold; 
             color: #ff4b4b;
-            font-size: 1.1em;
+            text-decoration: none;
+        }
+        .app-store-badge {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .app-store-badge img {
+            height: 45px;
+            transition: transform 0.2s;
+        }
+        .app-store-badge img:hover {
+            transform: scale(1.05);
+        }
+        .footer-text {
+            text-align: center;
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <div class="logo-area">
+            <img src="logo.png" alt="Photo Math Logo" onerror="this.src='https://via.placeholder.com/120?text=Photo+Math'">
+        </div>
+
         <h1>Privacy Policy</h1>
         <p><strong>Effective Date:</strong> 19 April 2026</p>
         <p><strong>Applies to:</strong> Photo Math (the "Application")</p>
@@ -51,11 +99,8 @@
         <h2>2. Information We Collect</h2>
         <p>We value your privacy and collect only minimal information necessary to provide core functionality:</p>
         <ul>
-            <li><strong>Camera and Photos:</strong> The App requires access to your device's camera to capture math problems. 
-            <strong>[LOKAL İŞLEM SEÇENEĞİ]:</strong> These images are processed locally on your device and are never uploaded to our servers.
-            <strong>[SUNUCU / API İŞLEMİ SEÇENEĞİ]:</strong> These images are sent securely to our servers (or third-party AI providers) solely for the purpose of analyzing and solving the math problem.
-            </li>
-            <li><strong>Analytics (Optional):</strong> We may collect anonymous, aggregated data via App Store tools to understand app crashes and performance.</li>
+            <li><strong>Camera and Photos:</strong> The App requires access to your device's camera to capture math problems. These images are processed securely to provide solutions.</li>
+            <li><strong>Analytics:</strong> We may collect anonymous, aggregated data via Apple's standard tools to understand app crashes and improve performance.</li>
         </ul>
 
         <h2>3. How We Use Your Information</h2>
@@ -67,10 +112,7 @@
         <p>We do not sell, rent, or share your personal data with any third parties.</p>
 
         <h2>4. Data Security & Retention</h2>
-        <p>We implement standard security measures to protect your data. 
-        <strong>[LOKAL İŞLEM SEÇENEĞİ]:</strong> Since images are processed locally, no camera data is stored by us.
-        <strong>[SUNUCU / API İŞLEMİ SEÇENEĞİ]:</strong> Images sent for analysis are not stored permanently and are deleted immediately after the solution is provided.
-        </p>
+        <p>We implement standard security measures to protect your data. Images captured for analysis are not stored permanently on our servers and are used only for the duration of the request.</p>
 
         <h2>5. Third-Party Services</h2>
         <p>If you purchase a subscription through the App, payments are handled securely by Apple's billing system. We do not have access to your payment details.</p>
@@ -78,9 +120,22 @@
         <h2>6. Changes to This Policy</h2>
         <p>We may occasionally update this Privacy Policy. You are encouraged to review this page periodically for any changes.</p>
 
-        <h2>7. Contact Us</h2>
-        <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
-        <p class="contact">Email: desteksancaktutan@gmail.com</p>
+        <div class="contact-box">
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions or concerns about this Privacy Policy or need support, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:desteksancaktutan@gmail.com" class="contact-email">desteksancaktutan@gmail.com</a></p>
+        </div>
+
+        <div class="app-store-badge">
+            <p style="margin-bottom: 10px; font-size: 0.9em; color: #666;">Available on the</p>
+            <a href="#">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store">
+            </a>
+        </div>
+
+        <div class="footer-text">
+            © 2026 Photo Math. All rights reserved.
+        </div>
     </div>
 
 </body>
